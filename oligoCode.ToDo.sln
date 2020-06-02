@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oligoCode.ToDo.Shell", "oligoCode.ToDo.Shell\oligoCode.ToDo.Shell.csproj", "{1777B52E-E283-4DBE-A888-B06858DA9FCE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oligoCode.ToDo.Model", "oligoCode.ToDo.Model\oligoCode.ToDo.Model.csproj", "{120963C9-C599-4203-9031-44391D0A0777}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oligoCode.ToDo.Repository", "oligoCode.ToDo.Repository\oligoCode.ToDo.Repository.csproj", "{44B2AEB1-BFDC-457C-87DB-19256720DA04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oligoCode.ToDo.ToDoItemModule", "oligoCode.ToDo.ToDoItemModule\oligoCode.ToDo.ToDoItemModule.csproj", "{C16E8006-FD90-431C-B83E-AEB8A169AFD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oligoCode.ToDo.Infrastructure", "oligoCode.ToDo.Infrastructure\oligoCode.ToDo.Infrastructure.csproj", "{98D01174-A27C-4536-8458-C8FFFB7F5924}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{1777B52E-E283-4DBE-A888-B06858DA9FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1777B52E-E283-4DBE-A888-B06858DA9FCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1777B52E-E283-4DBE-A888-B06858DA9FCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{120963C9-C599-4203-9031-44391D0A0777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120963C9-C599-4203-9031-44391D0A0777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120963C9-C599-4203-9031-44391D0A0777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120963C9-C599-4203-9031-44391D0A0777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44B2AEB1-BFDC-457C-87DB-19256720DA04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B2AEB1-BFDC-457C-87DB-19256720DA04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B2AEB1-BFDC-457C-87DB-19256720DA04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B2AEB1-BFDC-457C-87DB-19256720DA04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C16E8006-FD90-431C-B83E-AEB8A169AFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C16E8006-FD90-431C-B83E-AEB8A169AFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C16E8006-FD90-431C-B83E-AEB8A169AFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C16E8006-FD90-431C-B83E-AEB8A169AFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D01174-A27C-4536-8458-C8FFFB7F5924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D01174-A27C-4536-8458-C8FFFB7F5924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D01174-A27C-4536-8458-C8FFFB7F5924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D01174-A27C-4536-8458-C8FFFB7F5924}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

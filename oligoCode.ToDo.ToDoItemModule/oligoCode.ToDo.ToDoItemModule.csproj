@@ -4,20 +4,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1777B52E-E283-4DBE-A888-B06858DA9FCE}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{C16E8006-FD90-431C-B83E-AEB8A169AFD6}</ProjectGuid>
+    <OutputType>library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>oligoCode.ToDo.Shell</RootNamespace>
-    <AssemblyName>oligoCode.ToDo.Shell</AssemblyName>
+    <RootNamespace>oligoCode.ToDo.ToDoItemModule</RootNamespace>
+    <AssemblyName>oligoCode.ToDo.ToDoItemModule</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -27,7 +25,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -52,24 +49,11 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Page Include="Shell.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="ToDoItemListView.xaml.cs">
+      <DependentUpon>ToDoItemListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Shell.xaml.cs">
-      <DependentUpon>Shell.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ShellViewModel.cs" />
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="ToDoItemListViewModel.cs" />
+    <Compile Include="ToDoItemModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -91,18 +75,21 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Prism.Unity" Version="7.2.0.1422" />
+    <Page Include="ToDoItemListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\oligoCode.ToDo.Infrastructure\oligoCode.ToDo.Infrastructure.csproj">
       <Project>{98d01174-a27c-4536-8458-c8fffb7f5924}</Project>
       <Name>oligoCode.ToDo.Infrastructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\oligoCode.ToDo.ToDoItemModule\oligoCode.ToDo.ToDoItemModule.csproj">
-      <Project>{C16E8006-FD90-431C-B83E-AEB8A169AFD6}</Project>
-      <Name>oligoCode.ToDo.ToDoItemModule</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
