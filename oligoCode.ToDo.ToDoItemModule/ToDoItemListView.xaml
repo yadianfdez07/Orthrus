@@ -10,7 +10,45 @@
     d:DesignWidth="800"
     prism:ViewModelLocator.AutoWireViewModel="True"
     mc:Ignorable="d">
+    <UserControl.Resources>
+        <DataTemplate x:Key="ToDoItemTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid
+                    Grid.Row="0"
+                    Grid.Column="0">
+                    <TextBlock Text="{Binding Id}" />
+                </Grid>
+                <Grid
+                    Grid.Row="1"
+                    Grid.Column="1">
+                    <TextBlock Text="{Binding Description}" />
+                </Grid>
+
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+
     <Grid>
-        <Label Content="{Binding Message}" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label
+            Grid.Row="0"
+            Content="{Binding Message}" />
+        <ListBox
+            Grid.Row="1"
+            ItemTemplate="{StaticResource ToDoItemTemplate}"
+            ItemsSource="{Binding ToDoItems}" />
     </Grid>
 </UserControl>
