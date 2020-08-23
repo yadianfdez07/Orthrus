@@ -16,6 +16,7 @@ namespace oligoCode.ToDo.Tests
             // Acct
 
             // Assert
+            Assert.True(true);
         }
     }
 }
