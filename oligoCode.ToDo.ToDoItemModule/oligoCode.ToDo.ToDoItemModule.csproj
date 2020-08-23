@@ -95,6 +95,10 @@
       <Project>{120963c9-c599-4203-9031-44391d0a0777}</Project>
       <Name>oligoCode.ToDo.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\oligoCode.ToDo.Repository\oligoCode.ToDo.Repository.csproj">
+      <Project>{44B2AEB1-BFDC-457C-87DB-19256720DA04}</Project>
+      <Name>oligoCode.ToDo.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

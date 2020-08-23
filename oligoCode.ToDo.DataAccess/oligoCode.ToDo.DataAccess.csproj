@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44B2AEB1-BFDC-457C-87DB-19256720DA04}</ProjectGuid>
+    <ProjectGuid>{C5B07ABA-FC84-4FC3-9A06-1144B43D8CE7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>oligoCode.ToDo.Repository</RootNamespace>
-    <AssemblyName>oligoCode.ToDo.Repository</AssemblyName>
+    <RootNamespace>oligoCode.ToDo.DataAccess</RootNamespace>
+    <AssemblyName>oligoCode.ToDo.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,22 +51,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ToDoItemRepository.cs" />
+    <Compile Include="Migrations\202008130014130_Initial.cs" />
+    <Compile Include="Migrations\202008130014130_Initial.designer.cs">
+      <DependentUpon>202008130014130_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ToDoContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\oligoCode.ToDo.DataAccess\oligoCode.ToDo.DataAccess.csproj">
-      <Project>{c5b07aba-fc84-4fc3-9a06-1144b43d8ce7}</Project>
-      <Name>oligoCode.ToDo.DataAccess</Name>
-    </ProjectReference>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\oligoCode.ToDo.Model\oligoCode.ToDo.Model.csproj">
       <Project>{120963c9-c599-4203-9031-44391d0a0777}</Project>
       <Name>oligoCode.ToDo.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <EmbeddedResource Include="Migrations\202008130014130_Initial.resx">
+      <DependentUpon>202008130014130_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

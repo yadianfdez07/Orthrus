@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oligoCode.ToDo.ToDoItemModu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oligoCode.ToDo.Infrastructure", "oligoCode.ToDo.Infrastructure\oligoCode.ToDo.Infrastructure.csproj", "{98D01174-A27C-4536-8458-C8FFFB7F5924}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oligoCode.ToDo.DataAccess", "oligoCode.ToDo.DataAccess\oligoCode.ToDo.DataAccess.csproj", "{C5B07ABA-FC84-4FC3-9A06-1144B43D8CE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oligoCode.ToDo.Tests", "oligoCode.ToDo.Tests\oligoCode.ToDo.Tests.csproj", "{623CE0F4-1C36-42FF-9557-53FB11F005D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{98D01174-A27C-4536-8458-C8FFFB7F5924}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98D01174-A27C-4536-8458-C8FFFB7F5924}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98D01174-A27C-4536-8458-C8FFFB7F5924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B07ABA-FC84-4FC3-9A06-1144B43D8CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B07ABA-FC84-4FC3-9A06-1144B43D8CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B07ABA-FC84-4FC3-9A06-1144B43D8CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B07ABA-FC84-4FC3-9A06-1144B43D8CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{623CE0F4-1C36-42FF-9557-53FB11F005D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623CE0F4-1C36-42FF-9557-53FB11F005D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623CE0F4-1C36-42FF-9557-53FB11F005D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623CE0F4-1C36-42FF-9557-53FB11F005D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
